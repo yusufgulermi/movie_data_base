@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    body::-webkit-scrollbar {
+        display: none
+    }
+
+    .fade-card::after {
+        content: "";
+        width: 60px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0, #fff 100%);
+        will-change: opacity;
+        pointer-events: none;
+    }
+
+    ::-webkit-scrollbar {
+        height: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #0C66E4;
+        border-radius: 10px;
+    }
+
+    .button-change {
+        background-color: #0C66E4;
+        border-radius: 9999px;
+        color: white;
+    }
+}
