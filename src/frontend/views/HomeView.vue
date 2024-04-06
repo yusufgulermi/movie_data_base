@@ -21,6 +21,7 @@
           <CardTemplate 
           v-for="card in filteredData" 
           :key="card.id" 
+          :id="card.id" 
           :title="card.title" 
           :releaseDate="card.release_date"
           :voteAverage="card.vote_average"
