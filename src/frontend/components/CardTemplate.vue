@@ -14,9 +14,6 @@
         <div class="font-semibold">
             Vote: {{ Number(voteAverage.toFixed(1)) * 10 }}%
         </div>
-        <div class="font-semibold">
-           {{favoriteStore.favorite[289]}}
-        </div>
     </div>
 </template>
 
